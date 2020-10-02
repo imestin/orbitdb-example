@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/imestin/orbitdb-example/issues"
   },
-  "homepage": "https://github.com/imestin/orbitdb-example#readme"
+  "homepage": "https://github.com/imestin/orbitdb-example#readme",
+  "dependencies": {
+    "ipfs": "^0.50.2",
+    "orbit-db": "^0.26.0",
+    "orbit-db-identity-provider": "^0.3.1"
+  }
 }
