@@ -15,6 +15,12 @@ async function main() {
     const identity = db.identity;
     console.log(identity.toJSON());
 
+    // Add an entry. Without pin: true, content won't be pinned in IPFS
+    await db.put('name', 'hello', { pin: true });
+
+    // Read an entry
+    const value = db.get('name');
+    console.log("Fetched data (name): ", value);
 /*
     // Create new identity
     const options = { id: 'local-id' };
